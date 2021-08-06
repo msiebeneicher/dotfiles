@@ -13,5 +13,5 @@ trim_trailing_whitespace    = true
 [{*.bat,*.ps1,*.vb}]
 end_of_line                 = CRLF
 
-[Makefile]
+[{.gitconfig,Makefile}]
 indent_style                = tab

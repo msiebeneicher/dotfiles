@@ -7,14 +7,17 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 function doIt() {
     rsync --exclude ".git/" \
+        --exclude ".gitignore" \
+        --exclude ".gitkeep" \
         --exclude ".DS_Store" \
         --exclude ".osx" \
         --exclude "bootstrap.sh" \
         --exclude "brew.sh" \
         --exclude "init.sh" \
         --exclude "README.md" \
-        --exclude "LICENSE-MIT.txt" \
-        -avh --no-perms . ~;
+        --exclude "LICENSE" \
+        --exclude "internal/" \
+        -avh --no-perms . ./internal/. ~;
     #source ~/.bash_profile;
 }
 

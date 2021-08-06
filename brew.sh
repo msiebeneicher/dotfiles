@@ -37,6 +37,7 @@ fi;
 # Install more recent versions of some macOS tools.
 # brew install vim --with-override-system-vi
 brew install grep
+brew install make
 brew install openssh
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
@@ -68,13 +69,20 @@ brew install openssh
 # Install other useful binaries.
 brew install git
 brew install git-lfs
+brew install jq
+brew install ripgrep
+brew install shellcheck
 brew install tree
+
+# Install programming languages
+brew install go
 
 # Install other tools
 brew install --cask iterm2
 brew install --cask visual-studio-code
 brew install --cask superproductivity
 brew install --cask docker
+brew install --cask sourcetree
 brew install --cask spotify
 
 # Remove outdated versions from the cellar.
