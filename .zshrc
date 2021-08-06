@@ -8,7 +8,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# extend PATH varialbe
+export PATH="$HOME/bin:/usr/local/bin:$PATH"
+export PATH=$PATH:$(go env GOPATH)/bin
+export PATH="${HOMEBREW_PREFIX}/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="${HOMEBREW_PREFIX}/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="${HOMEBREW_PREFIX}/opt/grep/libexec/gnubin:$PATH"
+export PATH="${HOMEBREW_PREFIX}/opt/util-linux/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/marc.siebeneicher/.oh-my-zsh"
