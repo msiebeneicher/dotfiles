@@ -89,6 +89,8 @@ plugins=(
     common-aliases
     docker
     git
+    helm
+    kubectl
     osx
 )
 
