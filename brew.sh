@@ -21,8 +21,8 @@ brew install coreutils
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
-# Install GNU `sed`, overwriting the built-in `sed`.
-# brew install gnu-sed --with-default-names
+# Install GNU `sed`
+brew install gnu-sed
 
 # Install a modern version of Bash.
 brew install bash
@@ -67,6 +67,7 @@ brew install openssh
 # brew install xz
 
 # Install other useful binaries.
+brew install fzf
 brew install git
 brew install git-lfs
 brew install jq
