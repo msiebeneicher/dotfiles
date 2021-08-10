@@ -9,11 +9,19 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[credential "https://git-codecommit.eu-central-1.amazonaws\.com"]
+	#helper = !aws codecommit credential-helper $@
+	helper = !codecommit_credential_helper.sh $@
+	UseHttpPath = true
+[credential "https://github.vodafone.com"]
+	helper = osxkeychain
 [merge]
 	ff = only
 [branch]
 	autosetuprebase = always
 	autosetupmerge = always
+[url "https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/"]
+	insteadOf = aws:
 [alias]
 	co = checkout
 	count = shortlog -sn
