@@ -79,12 +79,15 @@ brew install tree
 brew install go
 
 # Install other tools
-brew install --cask iterm2
-brew install --cask visual-studio-code
-brew install --cask superproductivity
 brew install --cask docker
+brew install --cask fly
+brew install --cask iterm2
 brew install --cask sourcetree
 brew install --cask spotify
+brew install --cask superproductivity
+brew install --cask the-unarchiver
+brew install --cask tunnelblick
+brew install --cask visual-studio-code
 
 # Remove outdated versions from the cellar.
 brew cleanup
