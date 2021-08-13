@@ -121,8 +121,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias reload="source ~/.zshenv && source ~/.zshrc"
 alias pip="/opt/homebrew/bin/pip3"
+alias reload="source ~/.zshenv && source ~/.zshrc"
+alias sourcetree="open /Applications/Sourcetree.app"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
