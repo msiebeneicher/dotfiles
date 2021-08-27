@@ -15,3 +15,6 @@ end_of_line                 = CRLF
 
 [{.gitconfig,Makefile}]
 indent_style                = tab
+
+[{*.tf,*.hcl}]
+indent_size                 = 2

@@ -89,5 +89,14 @@ brew install --cask the-unarchiver
 brew install --cask tunnelblick
 brew install --cask visual-studio-code
 
+# Install DevOps tooling
+brew install ansible
+brew install helm
+brew install kubectx
+brew install kubernetes-cli
+brew install packer
+brew install shellcheck
+brew install chef/chef/inspec #cask
+
 # Remove outdated versions from the cellar.
 brew cleanup

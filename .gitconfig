@@ -16,7 +16,8 @@
 	helper = !codecommit_credential_helper.sh $@
 	UseHttpPath = true
 [credential "https://github.vodafone.com"]
-	helper = osxkeychain
+	#helper = osxkeychain
+	helper = "!f() { test \"$1\" = get && echo \"username=$(cat $HOME/.vfgithub)\" && echo \"password=\"; }; f"
 [merge]
 	ff = only
 [branch]
