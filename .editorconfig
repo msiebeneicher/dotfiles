@@ -16,5 +16,8 @@ end_of_line                 = CRLF
 [{.gitconfig,Makefile}]
 indent_style                = tab
 
-[{*.tf,*.hcl}]
+[{*.tf,*.hcl,*.yml,*.yaml}]
 indent_size                 = 2
+
+[.stCommitMsg]
+insert_final_newline        = false
