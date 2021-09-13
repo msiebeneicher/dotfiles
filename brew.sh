@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 
 # Install command-line tools using Homebrew.
@@ -74,6 +73,8 @@ brew install jq
 brew install ripgrep
 brew install shellcheck
 brew install tree
+
+brew install zsh-autosuggestions
 
 # Install programming languages
 brew install go

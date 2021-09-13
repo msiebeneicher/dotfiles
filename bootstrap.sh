@@ -3,7 +3,7 @@
 # sync dotfiles in home directory
 # based on https://github.com/mathiasbynens/dotfiles/blob/main/bootstrap.sh
 
-cd "$(dirname "${BASH_SOURCE}")";
+cd "$(dirname "${BASH_SOURCE[@]}")" || exit 1
 
 function doIt() {
     rsync --exclude ".git/" \
@@ -11,6 +11,7 @@ function doIt() {
         --exclude ".gitkeep" \
         --exclude ".DS_Store" \
         --exclude ".osx" \
+        --exclude "*.bak" \
         --exclude "bootstrap.sh" \
         --exclude "brew.sh" \
         --exclude "init.sh" \
@@ -21,10 +22,10 @@ function doIt() {
     #source ~/.bash_profile;
 }
 
-if [ "$1" == "--force" -o "$1" == "-f" ]; then
+if [ "$1" == "--force" ] || [ "$1" == "-f" ]; then
     doIt;
 else
-    read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
+    read -r -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
     echo "";
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         doIt;
