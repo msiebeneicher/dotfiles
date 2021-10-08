@@ -26,6 +26,7 @@
 [url "https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/"]
 	insteadOf = aws:
 [alias]
+	branches = branch -v
 	changed = show --pretty=\"format:\" --name-only
 	co = checkout
 	commend = commit --amend --no-edit

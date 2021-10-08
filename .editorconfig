@@ -10,6 +10,9 @@ max_line_length             = off
 tab_width                   = 4
 trim_trailing_whitespace    = true
 
+[*.go]
+indent_style                = tab
+
 [{*.bat,*.ps1,*.vb}]
 end_of_line                 = CRLF
 
