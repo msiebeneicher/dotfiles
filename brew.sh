@@ -69,6 +69,7 @@ brew install openssh
 brew install fzf
 brew install git
 brew install git-lfs
+brew install lazygit
 brew install jq
 brew install ripgrep
 brew install shellcheck
@@ -80,6 +81,7 @@ brew install zsh-autosuggestions
 brew install go
 
 # Install other tools
+brew install --cask amazon-workspaces
 brew install --cask docker
 brew install --cask fly
 brew install --cask iterm2
