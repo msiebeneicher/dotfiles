@@ -92,7 +92,7 @@ plugins=(
     git
     helm
     kubectl
-    osx
+    macos
 )
 
 source ${ZSH}/oh-my-zsh.sh
