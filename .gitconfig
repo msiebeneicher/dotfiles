@@ -1,6 +1,8 @@
 [user]
 	name = Marc Siebeneicher
 	email = marc.siebeneicher@vodafone.com
+[checkout]
+	defaultRemote=origin
 [commit]
 	template = /Users/marc.siebeneicher/.stCommitMsg
 [core]
