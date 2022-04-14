@@ -83,7 +83,7 @@ brew install go
 
 # Install other tools
 brew install --cask amazon-workspaces
-brew install --cask docker
+brew install --cask rancher # docker-desktop alternative
 brew install --cask fly
 brew install --cask iterm2
 brew install --cask macdown
