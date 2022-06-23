@@ -9,12 +9,13 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # extend PATH varialbe
-export PATH="$HOME/bin:/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 export PATH=$PATH:$(go env GOPATH)/bin
 export PATH="${HOMEBREW_PREFIX}/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="${HOMEBREW_PREFIX}/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="${HOMEBREW_PREFIX}/opt/grep/libexec/gnubin:$PATH"
 export PATH="${HOMEBREW_PREFIX}/opt/util-linux/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/marc.siebeneicher/.oh-my-zsh"
@@ -124,7 +125,6 @@ source ${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pip="/opt/homebrew/bin/pip3"
-alias reload="source ~/.zshenv && source ~/.zshrc"
 alias sourcetree="open /Applications/Sourcetree.app"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -132,3 +132,6 @@ alias sourcetree="open /Applications/Sourcetree.app"
 
 # interal vf settings
 [[ ! -f ~/.vf_sol ]] || source ~/.vf_sol
+
+# autocompletions
+source <(fly completion --shell zsh)
