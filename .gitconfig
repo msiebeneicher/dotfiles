@@ -51,5 +51,6 @@
 	please = push --force-with-lease
 	pr = open-pr
 	purge = clean -fd
+	pom = pull origin master
 	uncommit = reset --soft HEAD
 	unstage = reset HEAD --
