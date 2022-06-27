@@ -97,6 +97,16 @@ plugins=(
 )
 
 source ${ZSH}/oh-my-zsh.sh
+
+# zsh-autosuggestions
+ZSH_AUTOSUGGEST_ACCEPT_WIDGETS=(
+		#forward-char
+		end-of-line
+		vi-forward-char
+		vi-end-of-line
+		vi-add-eol
+	)
+
 source ${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
