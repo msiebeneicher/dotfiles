@@ -137,6 +137,9 @@ source ${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 alias pip="/opt/homebrew/bin/pip3"
 alias sourcetree="open /Applications/Sourcetree.app"
 
+# overwrite of common-aliases.plugin.zsh
+alias ll='ls -lAFh'   #long list,show almost all,show type,human readable
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
