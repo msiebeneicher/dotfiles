@@ -94,6 +94,7 @@ plugins=(
     helm
     kubectl
     macos
+    zsh-fzf-history-search
 )
 
 source ${ZSH}/oh-my-zsh.sh

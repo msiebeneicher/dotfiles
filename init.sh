@@ -19,5 +19,8 @@ cp ~/.profile ~/.zprofile
 # install oh-my-zsh powerlevel10k theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
+# install zsh/fzf History Search
+git clone --depth=1 https://github.com/joshskidmore/zsh-fzf-history-search ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-fzf-history-search
+
 # some default configs
 defaults write com.apple.Finder AppleShowAllFiles true
