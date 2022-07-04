@@ -15,6 +15,7 @@ function doIt() {
         --exclude "bootstrap.sh" \
         --exclude "brew.sh" \
         --exclude "init.sh" \
+        --exclude "vscode.sh" \
         --exclude "README.md" \
         --exclude "LICENSE" \
         --exclude "internal/" \
