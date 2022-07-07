@@ -52,5 +52,6 @@
 	pr = open-pr
 	purge = clean -fd
 	pom = pull origin master
+	st = status
 	uncommit = reset --soft HEAD
 	unstage = reset HEAD --
