@@ -75,7 +75,6 @@ brew install jq
 brew install ripgrep
 brew install shellcheck
 brew install tree
-
 brew install zsh-autosuggestions
 
 # Install programming languages
@@ -87,7 +86,6 @@ brew install --cask amazon-workspaces
 brew install --cask iterm2
 brew install --cask lens
 brew install --cask macdown
-brew install --cask rancher # docker-desktop alternative
 brew install --cask sourcetree
 brew install --cask spotify
 brew install --cask superproductivity
@@ -97,12 +95,16 @@ brew install --cask visual-studio-code
 
 # Install DevOps tooling
 brew install ansible
+brew install aws-nuke
+brew install chef/chef/inspec #cask
 brew install helm
 brew install kubectx
 brew install kubernetes-cli
 brew install packer
 brew install shellcheck
-brew install chef/chef/inspec #cask
+
+brew install --cask docker
+#brew install --cask rancher # docker-desktop alternative
 
 # Remove outdated versions from the cellar.
 brew cleanup
