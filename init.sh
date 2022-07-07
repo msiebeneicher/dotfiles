@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # create root project folder
-cd ~
+cd ~ || exit 1
 mkdir Projects
 
 # install homebrew
