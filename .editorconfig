@@ -19,7 +19,10 @@ end_of_line                 = CRLF
 [{.gitconfig,Makefile}]
 indent_style                = tab
 
-[{*.tf,*.hcl,*.yml,*.yaml}]
+[.gitconfig]
+trim_trailing_whitespace    = false
+
+[{*.tf,*.hcl,*.rb,*.yml,*.yaml}]
 indent_size                 = 2
 
 [.stCommitMsg]
