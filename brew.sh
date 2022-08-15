@@ -69,6 +69,7 @@ brew install openssh
 brew install fzf
 brew install git
 brew install git-lfs
+brew install gh
 brew install gitleaks
 brew install lazygit
 brew install jq
