@@ -83,10 +83,13 @@ brew install go
 
 # Install other tools
 # brew install --cask fly   # fly needs to by in sync with used server version
+brew install --cask 1password
 brew install --cask amazon-workspaces
+brew install --cask appcleaner
 brew install --cask iterm2
 brew install --cask lens
 brew install --cask macdown
+brew install --cask masscode
 brew install --cask sourcetree
 brew install --cask spotify
 brew install --cask superproductivity
