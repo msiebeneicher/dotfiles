@@ -49,6 +49,7 @@
 	pr = open-pr
 	purge = clean -fd
 	pom = pull origin master
+	root = rev-parse --show-toplevel
 	st = status
 	uncommit = reset --soft HEAD
 	unstage = reset HEAD --
