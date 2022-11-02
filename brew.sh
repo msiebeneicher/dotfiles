@@ -75,6 +75,7 @@ brew install lazygit
 brew install jq
 brew install ripgrep
 brew install shellcheck
+brew install shfmt
 brew install tree
 brew install zsh-autosuggestions
 
