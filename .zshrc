@@ -127,6 +127,12 @@ source ${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# interal vf settings
+[[ ! -f ~/.vf_sol ]] || source ~/.vf_sol
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -135,7 +141,7 @@ source ${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gh-login="gh auth login --git-protocol https --hostname github.vodafone.com --with-token <<< "${VF_GH_TOKEN}""
+alias gh-login="gh auth login --git-protocol https --hostname github.vodafone.com --with-token <<< \"${VF_GH_TOKEN}\""
 alias git-cdroot='pushd $(git root)'
 alias git-clean="git fetch -p && git branch -vv | grep gone | cut -d' ' -f 3 | grep . | xargs git branch -D"
 alias pip="/opt/homebrew/bin/pip3"
@@ -143,12 +149,6 @@ alias sourcetree="open /Applications/Sourcetree.app"
 
 # overwrite of common-aliases.plugin.zsh
 alias ll='ls -lAFh'   #long list,show almost all,show type,human readable
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# interal vf settings
-[[ ! -f ~/.vf_sol ]] || source ~/.vf_sol
 
 # autocompletions
 source <(fly completion --shell zsh)
