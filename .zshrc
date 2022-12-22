@@ -146,6 +146,8 @@ alias git-cdroot='pushd $(git root)'
 alias git-clean="git fetch -p && git branch -vv | grep gone | cut -d' ' -f 3 | grep . | xargs git branch -D"
 alias pip="/opt/homebrew/bin/pip3"
 alias sourcetree="open /Applications/Sourcetree.app"
+alias tg-delete-caches='find . -type d -name ".terragrunt-cache" -prune -exec rm -rf {} \;'
+alias tg-find-caches='find . -type d -name ".terragrunt-cache"'
 
 # overwrite of common-aliases.plugin.zsh
 alias ll='ls -lAFh'   #long list,show almost all,show type,human readable
