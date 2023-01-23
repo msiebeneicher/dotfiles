@@ -99,6 +99,7 @@ brew install --cask tunnelblick
 brew install --cask visual-studio-code
 
 # Install DevOps tooling
+brew install actionlint
 brew install ansible
 brew install aws-nuke
 brew install chef/chef/inspec #cask
@@ -113,3 +114,6 @@ brew install --cask docker
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+echo "unsupported tools for manual installation:"
+echo "go install github.com/transcend-io/terragrunt-atlantis-config@v1.16.0"
