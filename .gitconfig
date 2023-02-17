@@ -19,7 +19,9 @@
 	UseHttpPath = true
 [credential "https://github.vodafone.com"]
 	#helper = osxkeychain
-	helper = "!f() { test \"$1\" = get && echo \"username=$(cat $HOME/.vfgithub)\" && echo \"password=\"; }; f"
+	helper = "!f() { test \"$1\" = get && echo \"username=${GH_ENTERPRISE_TOKEN}\" && echo \"password=\"; }; f"
+[credential "https://github.com"]
+	helper = "!f() { test \"$1\" = get && echo \"username=${GITHUB_TOKEN}\" && echo \"password=\"; }; f"
 [merge]
 	ff = only
 [branch]

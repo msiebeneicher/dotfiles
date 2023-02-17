@@ -141,7 +141,6 @@ source ${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gh-login="gh auth login --git-protocol https --hostname github.vodafone.com --with-token <<< \"${VF_GH_TOKEN}\""
 alias git-cdroot='pushd $(git root)'
 alias git-clean="git fetch -p && git branch -vv | grep gone | cut -d' ' -f 3 | grep . | xargs git branch -D"
 alias pip="/opt/homebrew/bin/pip3"
