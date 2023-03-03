@@ -88,9 +88,9 @@ brew install --cask 1password
 brew install --cask amazon-workspaces
 brew install --cask appcleaner
 brew install --cask iterm2
-brew install --cask lens
 brew install --cask macdown
 brew install --cask masscode
+brew install --cask openlens
 brew install --cask sourcetree
 brew install --cask spotify
 brew install --cask superproductivity
@@ -103,6 +103,7 @@ brew install actionlint
 brew install ansible
 brew install aws-nuke
 brew install chef/chef/inspec #cask
+brew install go-task
 brew install helm
 brew install kubectx
 brew install kubernetes-cli
