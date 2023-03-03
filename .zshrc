@@ -94,6 +94,7 @@ plugins=(
     helm
     kubectl
     macos
+    task
     zsh-fzf-history-search
 )
 
