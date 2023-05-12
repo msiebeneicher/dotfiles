@@ -118,3 +118,7 @@ brew cleanup
 
 echo "unsupported tools for manual installation:"
 echo "go install github.com/transcend-io/terragrunt-atlantis-config@v1.16.0"
+
+# addtional echo "unsupported tools for manual installation:"
+echo "addtional extensions for manual installation:"
+echo "gh extension install dlvhdr/gh-dash" # see https://github.com/dlvhdr/gh-dash
