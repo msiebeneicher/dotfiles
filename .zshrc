@@ -145,7 +145,9 @@ source ${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias git-cdroot='pushd $(git root)'
 alias git-clean="git fetch -p && git branch -vv | grep gone | cut -d' ' -f 3 | grep . | xargs git branch -D"
-alias gh-prs="GH_HOST=github.vodafone.com gh search prs --owner VFDE-SOL --state open"
+alias gh-dash="GH_HOST=github.vodafone.com gh dash"
+alias gh-issues="GH_HOST=github.vodafone.com gh search issues --owner VFDE-SOL --state open --limit 100"
+alias gh-prs="GH_HOST=github.vodafone.com gh search prs --owner VFDE-SOL --state open --limit 100"
 alias pip="/opt/homebrew/bin/pip3"
 alias sourcetree="open /Applications/Sourcetree.app"
 alias tf-delete-caches='find . -type d -name ".terraform" -prune -exec rm -rf {} \;'
