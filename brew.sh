@@ -100,18 +100,20 @@ brew install --cask visual-studio-code
 
 # Install DevOps tooling
 brew install actionlint
-brew install ansible
 brew install aws-nuke
-brew install chef/chef/inspec #cask
 brew install go-task
 brew install helm
 brew install kubectx
 brew install kubernetes-cli
-brew install packer
 brew install shellcheck
 
 brew install --cask docker
 #brew install --cask rancher # docker-desktop alternative
+
+# Install packer setup
+# brew install packer
+# brew install ansible
+# brew install chef/chef/inspec #cask
 
 # Remove outdated versions from the cellar.
 brew cleanup
