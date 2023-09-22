@@ -1,0 +1,68 @@
+# install with GH_HOST=github.com gh extension install dlvhdr/gh-dash
+# requires a nerdfont to show symbols https://github.com/ryanoasis/nerd-fonts
+# put this @ ~/.config/gh-dash/config.yml
+# https://github.com/dlvhdr/gh-dash
+prSections:
+- title: "Dev: me"
+  filters: is:open author:@me
+- title: "Maintain: Me"
+  filters: is:open user-review-requested:@me #-label:wip,do-not-merge/work-in-progress,pr/do-not-merge/work-in-progress
+- title: "Maintain: Tesla k8s"
+  filters: is:open team-review-requested:VFDE-SOL/team-tesla-k8s-maintainer #-label:wip,do-not-merge/work-in-progress,pr/do-not-merge/work-in-progress
+- title: Involved
+  filters: is:open involves:@me -author:@me
+issuesSections:
+- title: My Issues
+  filters: is:open author:@me
+- title: Assigned
+  filters: is:open assignee:@me
+- title: Involved
+  filters: is:open involves:@me -author:@me
+#- title: ISS/CET-EKS
+#  filters: is:open repo:VFDE-ISS/CET-EKS
+defaults:
+  preview:
+    open: true
+    width: 50
+  prsLimit: 20
+  issuesLimit: 20
+  view: prs
+  layout:
+    prs:
+      repo:
+        width: 30
+      author:
+        width: 15
+      updatedAt:
+        hidden: true
+      state:
+        hidden: true
+      assignees:
+        hidden: true
+      base:
+        hidden: true
+      lines:
+        hidden: true
+      reviewStatus:
+        hidden: true
+    issues:
+      updatedAt:
+        width: 7
+      repo:
+        width: 15
+      creator:
+        width: 10
+      assignees:
+        width: 20
+        hidden: true
+      reviewStatus:
+        hidden: true
+  refetchIntervalMinutes: 30
+keybindings:
+  issues: []
+  prs:
+    - key: B # b for bulldoze, a/A are taken, uppercase to not hit by mistake
+      command: gh pr review {{.PrNumber}} --approve --repo {{.RepoName}}
+repoPaths: {}
+pager:
+  diff: ""
