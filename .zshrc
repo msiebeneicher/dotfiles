@@ -160,4 +160,4 @@ alias tg-providers='rm -f .terraform.locks.hcl; terragrunt providers lock -platf
 alias ll='ls -lAFh'   #long list,show almost all,show type,human readable
 
 # autocompletions
-source <(fly completion --shell zsh)
+# source <(fly completion --shell zsh)
