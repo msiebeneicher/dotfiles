@@ -27,3 +27,4 @@ git clone https://github.com/sawadashota/go-task-completions.git ${ZSH_CUSTOM:=~
 
 # some default configs
 defaults write com.apple.Finder AppleShowAllFiles true
+git config --system --unset credential.helper

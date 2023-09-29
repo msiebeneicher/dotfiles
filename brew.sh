@@ -25,7 +25,7 @@ brew install gnu-sed
 
 # Install a modern version of Bash.
 brew install bash
-brew install bash-completion2
+brew install bash-completion@2
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
@@ -77,21 +77,25 @@ brew install ripgrep
 brew install shellcheck
 brew install shfmt
 brew install tree
+brew install wget
+brew install yq
 brew install zsh-autosuggestions
 
 # Install programming languages
 brew install go
+brew install goreleaser
 
 # Install other tools
 # brew install --cask fly   # fly needs to by in sync with used server version
 brew install --cask 1password
 brew install --cask amazon-workspaces
 brew install --cask appcleaner
+brew install --cask github
 brew install --cask iterm2
 brew install --cask macdown
 brew install --cask masscode
 brew install --cask openlens
-brew install --cask sourcetree
+#brew install --cask sourcetree
 brew install --cask spotify
 brew install --cask superproductivity
 brew install --cask the-unarchiver
@@ -101,11 +105,15 @@ brew install --cask visual-studio-code
 # Install DevOps tooling
 brew install actionlint
 brew install aws-nuke
+brew install awscli
 brew install go-task
 brew install helm
 brew install kubectx
 brew install kubernetes-cli
+brew install pre-commit
 brew install shellcheck
+brew install tflint
+brew install terraform-docs
 
 brew install --cask docker
 #brew install --cask rancher # docker-desktop alternative
