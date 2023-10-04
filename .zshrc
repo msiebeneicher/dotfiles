@@ -132,9 +132,6 @@ source ${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# interal vf settings
-[[ ! -f ~/.vf_sol ]] || source ~/.vf_sol
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -165,3 +162,6 @@ alias ll='ls -lAFh'   #long list,show almost all,show type,human readable
 
 # last path extension - "$HOME/bin always win"
 export PATH="$HOME/bin:$PATH"
+
+# interal vf settings
+[[ ! -f ~/.vf_sol ]] || source ~/.vf_sol
