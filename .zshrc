@@ -160,8 +160,8 @@ alias ll='ls -lAFh'   #long list,show almost all,show type,human readable
 # source <(fly completion --shell zsh)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# last path extension - "$HOME/bin always win"
-export PATH="$HOME/bin:$PATH"
-
 # interal vf settings
 [[ ! -f ~/.vf_sol ]] || source ~/.vf_sol
+
+# last path extension - "$HOME/bin always win"
+export PATH="$HOME/bin:$PATH"
