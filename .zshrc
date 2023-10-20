@@ -17,6 +17,7 @@ export PATH="${HOMEBREW_PREFIX}/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="${HOMEBREW_PREFIX}/opt/grep/libexec/gnubin:$PATH"
 export PATH="${HOMEBREW_PREFIX}/opt/make/libexec/gnubin:$PATH"
 export PATH="${HOMEBREW_PREFIX}/opt/util-linux/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/marc.siebeneicher/.oh-my-zsh"
@@ -162,6 +163,3 @@ alias ll='ls -lAFh'   #long list,show almost all,show type,human readable
 
 # interal vf settings
 [[ ! -f ~/.vf_sol ]] || source ~/.vf_sol
-
-# last path extension - "$HOME/bin always win"
-export PATH="$HOME/bin:$PATH"
