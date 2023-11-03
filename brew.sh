@@ -84,6 +84,7 @@ brew install zsh-autosuggestions
 # Install programming languages
 brew install go
 brew install goreleaser
+brew install golangci-lint
 
 # Install other tools
 # brew install --cask fly   # fly needs to by in sync with used server version
@@ -122,6 +123,9 @@ brew install --cask docker
 # brew install packer
 # brew install ansible
 # brew install chef/chef/inspec #cask
+
+# Install employer related tools
+brew install --cask miro
 
 # Remove outdated versions from the cellar.
 brew cleanup
