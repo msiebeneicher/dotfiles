@@ -152,7 +152,7 @@ alias tf-delete-caches='find . -type d -name ".terraform" -prune -exec rm -rf {}
 alias tf-find-caches='find . -type d -name ".terraform"'
 alias tg-delete-caches='find . -type d -name ".terragrunt-cache" -prune -exec rm -rf {} \;'
 alias tg-find-caches='find . -type d -name ".terragrunt-cache"'
-alias tg-providers='rm -f .terraform.locks.hcl; terragrunt providers lock -platform=linux_arm64 -platform=linux_amd64 -platform=darwin_amd64 -platform=darwin_arm64 -platform=windows_amd64'
+alias tg-providers='terragrunt providers lock -platform=linux_arm64 -platform=linux_amd64 -platform=darwin_amd64 -platform=darwin_arm64 -platform=windows_amd64'
 
 # overwrite of common-aliases.plugin.zsh
 alias ll='ls -lAFh'   #long list,show almost all,show type,human readable
