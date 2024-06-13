@@ -141,13 +141,13 @@ source ${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias admin-xattr='sudo xattr -r -d com.apple.quarantine /Applications/massCode.app'
 alias git-cdroot='pushd $(git root)'
 alias git-clean="git fetch -p && git branch -vv | grep gone | cut -d' ' -f 3 | grep . | xargs git branch -D"
 alias gh-dash="GH_HOST=github.vodafone.com gh dash"
 alias gh-issues="GH_HOST=github.vodafone.com gh search issues --owner VFDE-SOL --state open --limit 100"
 alias gh-prs="GH_HOST=github.vodafone.com gh search prs --owner VFDE-SOL --state open --limit 100"
 alias pip="/opt/homebrew/bin/pip3"
-alias sourcetree="open /Applications/Sourcetree.app"
 alias tf-delete-caches='find . -type d -name ".terraform" -prune -exec rm -rf {} \;'
 alias tf-find-caches='find . -type d -name ".terraform"'
 alias tg-delete-caches='find . -type d -name ".terragrunt-cache" -prune -exec rm -rf {} \;'
@@ -162,4 +162,4 @@ alias ll='ls -lAFh'   #long list,show almost all,show type,human readable
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # interal vf settings
-[[ ! -f ~/.vf_sol ]] || source ~/.vf_sol
+[ ! -f ~/.vf_sol ] || source ~/.vf_sol
