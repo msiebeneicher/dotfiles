@@ -67,15 +67,17 @@ brew install openssh
 
 # Install other useful binaries.
 brew install fzf
+brew install gh
 brew install git
 brew install git-lfs
-brew install gh
 brew install gitleaks
-brew install lazygit
 brew install jq
+brew install lazygit
+brew install minamijoyo/hcledit/hcledit
 brew install ripgrep
 brew install shellcheck
 brew install shfmt
+brew install sd
 brew install tree
 brew install wget
 brew install yq
@@ -96,7 +98,6 @@ brew install --cask iterm2
 brew install --cask macdown
 brew install --cask masscode
 brew install --cask openlens
-#brew install --cask sourcetree
 brew install --cask spotify
 brew install --cask superproductivity
 brew install --cask the-unarchiver
@@ -109,10 +110,12 @@ brew install aws-nuke
 brew install awscli
 brew install go-task
 brew install helm
+brew install k9s
 brew install kubectx
 brew install kubernetes-cli
 brew install pre-commit
 brew install shellcheck
+brew install telnet
 brew install tflint
 brew install terraform-docs
 
