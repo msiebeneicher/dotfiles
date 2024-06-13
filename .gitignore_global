@@ -1,10 +1,10 @@
-*~
-*.orig
+### local ###
+.idea
 *.bak
 *.delete
-
-.idea
-
+*.orig
+*~
+foo.*
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos
