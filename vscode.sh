@@ -9,6 +9,7 @@ vscode_extension=(
     eamodio.gitlens
     EditorConfig.EditorConfig
     eriklynd.json-tools
+    GitHub.copilot
     golang.go
     hashicorp.hcl
     hashicorp.terraform
@@ -27,6 +28,8 @@ vscode_extension=(
     timonwong.shellcheck
     wayou.vscode-todo-highlight
     yzhang.markdown-all-in-one
+    github.vscode-github-actions
+    suhay.vscode-editor-group-minimizer
 )
 
 for ext in "${vscode_extension[@]}"; do
