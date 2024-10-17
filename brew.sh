@@ -129,6 +129,7 @@ brew install --cask docker
 
 # Install employer related tools
 brew install --cask miro
+brew install --cask 1password-cli
 
 # Remove outdated versions from the cellar.
 brew cleanup
